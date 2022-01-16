@@ -4,6 +4,15 @@
     <title>Nattarrud Charoennithi</title>
 <style>
     * {box-sizing:border-box}
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 .center {
   display: block;
   margin-left: auto;
@@ -138,6 +147,7 @@ div.ex1{
                     [<a href="files/resume.pdf"  target=”_blank” border="0">Resume/CV</a>]
                     [<a href="files/transcript.pdf" target=”_blank” border="0">Transcript</a>]<br>
                     [<a href="https://www.instagram.com/jaicntr/"  target=”_blank” border="0">Instagram</a>]
+                    <button onclick="DarkMode()">&#11088</button>
                 </font>
             </td>
             
@@ -384,6 +394,10 @@ div.ex1{
           }
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
+        }
+        function DarkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
         }
         </script>
         
